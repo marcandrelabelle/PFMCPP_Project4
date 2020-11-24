@@ -37,6 +37,47 @@
  */
 
 /*
+your program should generate the following output EXACTLY.
+This includes the warnings.
+Use a service like https://www.diffchecker.com/diff to compare your output. 
+you should have no errors or warnings.
+
+
+clang++ -std=c++17 -Weverything -Wno-c++98-compat -Wno-missing-prototypes main.cpp && ./a.out
+result of ft.add(): 555.556
+result of ft.subtract(): -308.644
+result of ft.multiply(): 53345.3
+result of ft.divide(): 0.285712
+result of ft.add(): 4444.56
+result of ft.subtract(): 4444.56
+result of ft.multiply(): 0
+result of ft.divide(): 
+warning, floating point division by zero returns 'inf' !
+inf
+result of db.add(): 555.556
+result of db.subtract(): -308.644
+result of db.multiply(): 53345.3
+result of db.divide(): 0.285712
+result of db.add(): 123.456
+result of db.subtract(): 123.456
+result of db.multiply(): 0
+result of db.divide(): 
+warning, floating point division by zero returns 'inf' !
+inf
+result of i.add(): 30
+result of i.subtract(): -10
+result of i.multiply(): 200
+result of i.divide(): 0
+result of i.add(): 10
+result of i.subtract(): 10
+result of i.multiply(): 0
+result of i.divide(): error, integer division by zero will crash the program!
+returning lhs
+10
+good to go!
+*/
+
+/*
  MAKE SURE YOU ARE NOT ON THE MASTER BRANCH
 
  Commit your changes by clicking on the Source Control panel on the left, entering a message, and click [Commit and push].
@@ -89,43 +130,5 @@ int main()
     std::cout << "good to go!" << std::endl;
 }
 
-/*
-your program should generate the following output EXACTLY.
-This includes the warnings.
-Use a service like https://www.diffchecker.com/diff to compare your output. 
-you should have no errors or warnings.
 
 
-clang++ -std=c++17 -Weverything -Wno-c++98-compat -Wno-missing-prototypes main.cpp && ./a.out
-result of ft.add(): 555.556
-result of ft.subtract(): -308.644
-result of ft.multiply(): 53345.3
-result of ft.divide(): 0.285712
-result of ft.add(): 4444.56
-result of ft.subtract(): 4444.56
-result of ft.multiply(): 0
-result of ft.divide(): 
-warning, floating point division by zero returns 'inf' !
-inf
-result of db.add(): 555.556
-result of db.subtract(): -308.644
-result of db.multiply(): 53345.3
-result of db.divide(): 0.285712
-result of db.add(): 123.456
-result of db.subtract(): 123.456
-result of db.multiply(): 0
-result of db.divide(): 
-warning, floating point division by zero returns 'inf' !
-inf
-result of i.add(): 30
-result of i.subtract(): -10
-result of i.multiply(): 200
-result of i.divide(): 0
-result of i.add(): 10
-result of i.subtract(): 10
-result of i.multiply(): 0
-result of i.divide(): error, integer division by zero will crash the program!
-returning lhs
-10
-good to go!
-*/
